@@ -10,6 +10,7 @@ This project implements a **Fraud Detection System** using various machine learn
 - [Data](#data)
 - [Results](#results)
 - [License](#license)
+- [Author](#author)
 
 ## Project Overview
 
@@ -67,4 +68,7 @@ https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
+
+## Author
+GuillaumeQ11 - [GitHub](https://github.com/GuillaumeQ11)
