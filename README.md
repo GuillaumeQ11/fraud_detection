@@ -9,6 +9,7 @@ This project implements a **Fraud Detection System** using various machine learn
 - [Models Used](#models-used)
 - [Data](#data)
 - [Results](#results)
+- [Conclusion](#conclusion)
 - [License](#license)
 - [Author](#author)
 
@@ -53,18 +54,21 @@ https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 ## Results
 
-### Performance with SMOTE:
-
-- **Random Forest** achieved the best results with an **AUC of 0.9800**, **precision of 0.86**, and **recall of 0.79** for the fraudulent class (1).
-- **XGBoost** also showed strong performance with an **AUC of 0.9718**, **precision of 0.72**, and **recall of 0.80** for the fraudulent class.
-- **Logistic Regression**, despite an **AUC of 0.9716**, had **low precision for the fraudulent class (0.06)** but a **high recall (0.88)**.
 
 ### Performance without SMOTE:
 
-- **Random Forest** remains solid with an **AUC of 0.9267**, but with **precision of 0.91** and **recall of 0.75** for the fraudulent class.
-- **XGBoost** had an **AUC of 0.9691**, with **precision of 0.95** and **recall of 0.77** for the fraudulent class.
-- **Logistic Regression**  had an **AUC of 0.9708**, but with a **recall of 0.88** and **precision of 0.06** for the fraudulent class which is quite  bad.
+- **Random Forest** performed well with an **AUC of 0.9265**, **precision of 0.93**, and **recall of 0.75** for the fraudulent class.
+- **XGBoost** showed strong results with an **AUC of 0.9691**, **precision of 0.95**, and **recall of 0.77** for the fraudulent class.
+- **Logistic Regression** had an **AUC of 0.9720**, but with a **recall of 0.63** and **precision of 0.89** for the fraudulent class.
+- 
+### Performance with SMOTE:
 
+- **Random Forest** improved significantly with an **AUC of 0.9800**, **precision of 0.86**, and **recall of 0.79** for the fraudulent class.
+- **XGBoost** achieved an **AUC of 0.9718**, with **precision of 0.72** and **recall of 0.80** for the fraudulent class.
+- **Logistic Regression** showed an **AUC of 0.9716**, with **very low precision (0.06)** and **high recall (0.88)** for the fraudulent class, indicating a high number of false positives.
+
+### Conclusion :
+Using **SMOTE** improves overall model performance, particularly for **Random Forest** and **XGBoost**, with higher **AUCs** and better **recall** for the fraudulent class. However, for **Logistic Regression**, increasing the sample size with SMOTE does not lead to significant improvement and causes a drop in **precision** for the fraudulent class, indicating a high number of false positives. Therefore, **SMOTE** is beneficial for some models but should be used with caution, especially for models that are more sensitive to false positives.
 
 
 ## License
