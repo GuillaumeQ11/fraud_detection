@@ -62,7 +62,8 @@ https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 ### Performance without SMOTE:
 
 - **Random Forest** remains solid with an **AUC of 0.9267**, but with **precision of 0.91** and **recall of 0.75** for the fraudulent class.
-- **XGBoost** had an **AUC of 0.9691**, with **precision of 0.95** an
+- **XGBoost** had an **AUC of 0.9691**, with **precision of 0.95** and **recall of 0.77** for the fraudulent class.
+- **Logistic Regression**  had an **AUC of 0.9708**, but with a **recall of 0.88** and **precision of 0.06** for the fraudulent class which is quite  bad.
 
 
 
