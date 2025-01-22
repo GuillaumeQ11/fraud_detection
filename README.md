@@ -67,7 +67,7 @@ https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 - **XGBoost** achieved an **AUC of 0.9718**, with **precision of 0.72** and **recall of 0.80** for the fraudulent class.
 - **Logistic Regression** showed an **AUC of 0.9716**, with **very low precision (0.06)** and **high recall (0.88)** for the fraudulent class, indicating a high number of false positives.
 
-### Conclusion :
+## Conclusion :
 Using **SMOTE** improves overall model performance, particularly for **Random Forest** and **XGBoost**, with higher **AUCs** and better **recall** for the fraudulent class. However, for **Logistic Regression**, increasing the sample size with SMOTE does not lead to significant improvement and causes a drop in **precision** for the fraudulent class, indicating a high number of false positives. Therefore, **SMOTE** is beneficial for some models but should be used with caution, especially for models that are more sensitive to false positives.
 
 
